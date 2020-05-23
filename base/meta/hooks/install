@@ -1,0 +1,12 @@
+#!/bin/sh -e
+
+
+### https://snapcraft.io/docs/supported-snap-hooks
+### The install hook is called upon initial install only, i.e. it’s not called on subsequent refreshes.
+### The hook is executed before starting snap services (if it has any) and before the configure hook. The install hook is the place for one-time actions, such as an early initialisation of a resource when installed for the first time.
+
+### Copy the initial data, certificates and configuration parameters to the directory for system data of the snap.
+
+cp -r $SNAP/data $SNAP_DATA
+cp -r $SNAP/certificates $SNAP_DATA
+cp -r $SNAP/options $SNAP_DATA

@@ -1,0 +1,25 @@
+name: dbc-data-generator-108
+base: core18
+version: '0.1'
+summary: dbc-data-generator-108
+description: |
+  dbc-data-generator-108.
+grade: devel
+confinement: devmode
+architectures: [arm64, armhf, amd64, i386]
+
+apps:
+  dbc-data-generator-108:
+    command: bin/main.py
+    daemon: simple
+
+parts:
+  dbc-data-generator-108:
+    plugin: python
+    python-version: python3
+    source: .
+    python-packages: [cantools, python-can, numpy]
+  dbc:
+    source: base
+    source-type: local
+    plugin: dump

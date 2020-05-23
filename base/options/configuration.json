@@ -1,0 +1,11 @@
+{
+    "can": {
+            "fd": "True",
+            "frequency": 2,
+            "interface": "vcan0"
+    },
+    "dbc": {
+            "file": "/home/adrien/Dev/108_dbc_data_generator/base/options/j1939_orig.dbc",
+            "messages": "/home/adrien/Dev/108_dbc_data_generator/base/options/selected_messages"
+    }
+}
