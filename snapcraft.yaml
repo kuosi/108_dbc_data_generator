@@ -6,7 +6,9 @@ description: |
   dbc-data-generator-108.
 grade: devel
 confinement: devmode
-architectures: [arm64, armhf, amd64, i386]
+architectures:
+  - build-on: [amd64, i386, arm64, armhf]
+    run-on: [amd64, i386, arm64, armhf]
 
 apps:
   dbc-data-generator-108:
