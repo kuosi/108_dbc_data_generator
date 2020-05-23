@@ -22,6 +22,5 @@ parts:
     source: .
     python-packages: [cantools, python-can, numpy]
   dbc:
-    source: base
-    source-type: local
+    source: ./base
     plugin: dump

@@ -130,7 +130,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Winnie Pobouh - [www.winnie-pobouh.com](https://winnie-pobouh.com)
+Winnie Pobouh - [www.winniepobouh.com](https://winniepobouh.com)
 
 Project Link: [https://github.com/kuosi/108_dbc_data_generator](https://github.com/kuosi/108_dbc_data_generator)
 
