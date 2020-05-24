@@ -29,6 +29,6 @@ get_conf "dbc.file" "${SNAP_DATA}/options/j1939_orig.dbc"
 
 get_conf "dbc.messages" "${SNAP_DATA}/options/selected_messages"
 
-mkdir -m 0600 $SNAP_DATA/options
+#mkdir -m 0600 $SNAP_DATA/options
 snapctl get can dbc > $SNAP_DATA/options/configuration.json
 snapctl restart dbc-data-generator-108
