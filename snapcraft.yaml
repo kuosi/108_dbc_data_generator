@@ -22,5 +22,15 @@ parts:
     source: .
     python-packages: [cantools, python-can, numpy]
   dbc:
-    source: .
     plugin: dump
+    source: .
+    filesets:
+      exclude:
+        - -bin
+        - -build
+        - -temp-build
+        - -setup.py
+    stage:
+      - $exclude
+    prime:
+      - $exclude
