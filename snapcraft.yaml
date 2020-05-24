@@ -9,6 +9,8 @@ confinement: devmode
 architectures:
   - build-on: [amd64]
     run-on: [amd64]
+  - build-on: [armhf]
+    run-on: [armhf]
 
 apps:
   dbc-data-generator-108:
