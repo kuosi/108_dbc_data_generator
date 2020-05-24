@@ -104,6 +104,11 @@ snap set 108_dbc_data_generator can.interface=vcan0
 snap set 108_dbc_data_generator can.frequency=vcan0
 ```
 
+* set the FD property of the can interface (True = CAN_FD, False = Normal CAN)
+```
+snap set 108_dbc_data_generator can.fd=False
+```
+
 * set the dbc file
 ```
 snap set 108_dbc_data_generator dbc.file=full_path_to_dbc_file
@@ -138,6 +143,6 @@ Project Link: [https://github.com/kuosi/108_dbc_data_generator](https://github.c
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [Source for dbc file samples](http://hackage.haskell.org/package/ecu)
-* [Numpy](https://pypi.org/project/numpy/)
+* [Cantools](https://pypi.org/project/cantools/)
 * [Python CAN](https://pypi.org/project/python-can/)
 * [README-Template](https://github.com/othneildrew/Best-README-Template)

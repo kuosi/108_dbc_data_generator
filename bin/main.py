@@ -3,7 +3,6 @@
 import cantools
 import json
 import can
-import numpy.random as random2
 import random
 import math
 from time import sleep
@@ -11,15 +10,6 @@ import os
 
 snap_data_dir = os.environ.get('SNAP_DATA')
 #snap_data_dir = "../base"
-
-
-def bounded_random(min, max):
-    mu = (min + max)/2
-    sigma = abs((mu-min)/3)
-    value = int(random2.normal(mu, sigma))
-    while value < min or value > max:
-        value = int(random2.normal(mu, sigma))
-    return value
 
 f = open(snap_data_dir + '/options/configuration.json')
 config = json.load(f)
@@ -45,25 +35,20 @@ while True:
     sleep(can_frequency_s)
     for msg in data:
         message = db.get_message_by_name(msg)
-        #print(hex(message.frame_id).upper().replace("0X", ""))
-
+        
         if (can_fd or ((not can_fd) and message.length<=8)):
 
             signals_dict = {}
 
             for signal in message.signals:
-                #signals_dict[str(signal.name)] = random.randint(math.ceil(int(signal.minimum)), math.floor(int(signal.maximum)))
-                signals_dict[str(signal.name)] = bounded_random(signal.minimum, signal.maximum)
+                signals_dict[str(signal.name)] = random.randint(math.ceil(signal.minimum), math.floor(signal.maximum))
                 if (signals_dict[str(signal.name)] < int(signal.minimum)) or (signals_dict[str(signal.name)] > int(signal.maximum)):
                     print (signals_dict[str(signal.name)])
                     print (int(signal.minimum))
                     print (int(signal.maximum))
-                
-
-            #print (signals_dict)
 
             try:
-                can_message = can.Message(arbitration_id=int(message.frame_id), data=message.encode(signals_dict), is_fd=can_fd)
+                can_message = can.Message(arbitration_id=message.frame_id, data=message.encode(signals_dict), is_fd=can_fd)
                 can_bus.send(can_message)
             except:
                 print ("######")

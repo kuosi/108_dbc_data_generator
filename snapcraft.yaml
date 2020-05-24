@@ -11,6 +11,10 @@ architectures:
     run-on: [amd64]
   - build-on: [armhf]
     run-on: [armhf]
+  - build-on: [arm64]
+    run-on: [arm64]
+  - build-on: [i386]
+    run-on: [i386]
 
 apps:
   dbc-data-generator-108:
@@ -22,7 +26,7 @@ parts:
     plugin: python
     python-version: python3
     source: .
-    python-packages: [cantools, python-can, numpy]
+    python-packages: [cantools, python-can]
   dbc:
     plugin: dump
     source: .
