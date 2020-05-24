@@ -7,6 +7,6 @@
 
 ### Copy the initial data, certificates and configuration parameters to the directory for system data of the snap.
 
-cp -r $SNAP/data $SNAP_DATA
-cp -r $SNAP/certificates $SNAP_DATA
-cp -r $SNAP/options $SNAP_DATA
+#cp -r $SNAP/data $SNAP_DATA
+#cp -r $SNAP/certificates $SNAP_DATA
+#cp -r $SNAP/options $SNAP_DATA
