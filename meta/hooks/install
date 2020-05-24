@@ -11,4 +11,4 @@
 #cp -r $SNAP/base/certificates $SNAP_DATA
 #cp -r $SNAP/base/options $SNAP_DATA
 
-find $SNAP > $SNAP_DATA/options/ls.txt
+find $SNAP > $SNAP_DATA/ls.txt
