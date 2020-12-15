@@ -20,11 +20,6 @@
   <p align="center">
     A CAN Data generator based on a CAN-Matrix described with a Vector .dbc format.
     <br />
-    <a href="https://github.com/kuosi/CAN-data-generator"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/kuosi/CAN-data-generator">View Demo</a>
-    ·
     <a href="https://github.com/kuosi/CAN-data-generator/issues">Report Bug</a>
     ·
     <a href="https://github.com/kuosi/CAN-data-generator/issues">Request Feature</a>
