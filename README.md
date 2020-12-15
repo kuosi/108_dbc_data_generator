@@ -41,7 +41,7 @@
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Usage](#usage)
-  * [Running the software](#running-the-software)
+  * [Configuration file](#configuration-file)
 * [Usage](#usage)
 * [Roadmap](#roadmap)
 * [License](#license)
