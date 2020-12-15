@@ -106,7 +106,8 @@ optional arguments:
 
 Adapt the file docker-compose.yml to match your own configuration.
 
-```docker-compose -up
+```
+docker-compose -up
 ```
 
 
