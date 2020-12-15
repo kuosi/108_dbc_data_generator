@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  can_data_generator:
+    build: .
+    volumes:
+      #Location of the configuration files on the host
+      - /home/kuosi/dev/108_dbc_data_generator/config:/usr/src/app/config
+    #Use the host network to have access to the can interface
+    network_mode: host

@@ -53,9 +53,9 @@ BO_ 2297441790 AccelerationSensor: 7 Vector__XXX
  SG_ VrtclAcclrtnExRngeFigureOfMerit : 52|2@1+ (1,0) [0|3] "" Vector__XXX
  SG_ LngtdnlAcclrtnExRngFgureOfMerit : 50|2@1+ (1,0) [0|3] "" Vector__XXX
  SG_ LtrlAcclrtnExRangeFigureOfMerit : 48|2@1+ (1,0) [0|3] "" Vector__XXX
- SG_ VerticalAccelerationExRange : 32|16@1+ (0.01,-320) [-320|322.55] "m/s²" Vector__XXX
- SG_ LateralAccelerationExRange : 0|16@1+ (0.01,-320) [-320|322.55] "m/s²" Vector__XXX
- SG_ LongitudinalAccelerationExRange : 16|16@1+ (0.01,-320) [-320|322.55] "m/s²" Vector__XXX
+ SG_ VerticalAccelerationExRange : 32|16@1+ (0.01,-320) [-320|322.55] "m/sï¿½" Vector__XXX
+ SG_ LateralAccelerationExRange : 0|16@1+ (0.01,-320) [-320|322.55] "m/sï¿½" Vector__XXX
+ SG_ LongitudinalAccelerationExRange : 16|16@1+ (0.01,-320) [-320|322.55] "m/sï¿½" Vector__XXX
 
 BO_ 2566712062 VEP4: 8 Vector__XXX
  SG_ HybrdBatteryPackRemainingCharge : 0|16@1+ (0.0025,0) [0|160.6375] "%" Vector__XXX
@@ -944,8 +944,8 @@ BO_ 2633927678 GFP: 8 Vector__XXX
  SG_ EngFuelValve1IntakeAbsPress : 0|16@1+ (0.1,0) [0|6425.5] "kPa" Vector__XXX
 
 BO_ 2633925118 GFI2: 8 Vector__XXX
- SG_ EngFuelFlowRate2 : 16|16@1+ (0.1,0) [0|6425.5] "m³/h" Vector__XXX
- SG_ EngFuelFlowRate1 : 0|16@1+ (0.1,0) [0|6425.5] "m³/h" Vector__XXX
+ SG_ EngFuelFlowRate2 : 16|16@1+ (0.1,0) [0|6425.5] "mï¿½/h" Vector__XXX
+ SG_ EngFuelFlowRate1 : 0|16@1+ (0.1,0) [0|6425.5] "mï¿½/h" Vector__XXX
  SG_ EngRqedFuelValve2Pos : 56|8@1+ (0.4,0) [0|100] "%" Vector__XXX
  SG_ EngRqedFuelValve1Pos : 48|8@1+ (0.4,0) [0|100] "%" Vector__XXX
  SG_ EngFuelValve2Pos : 40|8@1+ (0.4,0) [0|100] "%" Vector__XXX
@@ -1189,7 +1189,7 @@ BO_ 2566833406 EBS22: 8 Vector__XXX
 
 BO_ 2365507326 EBS23: 8 Vector__XXX
  SG_ PneumaticSupplyPressure : 56|8@1+ (5,0) [0|1250] "kPa" Vector__XXX
- SG_ BrakeTemperature : 48|8@1+ (10,0) [0|2500] "°C" Vector__XXX
+ SG_ BrakeTemperature : 48|8@1+ (10,0) [0|2500] "ï¿½C" Vector__XXX
  SG_ BrakeLining : 40|8@1+ (0.4,0) [0|100] "%" Vector__XXX
  SG_ TyrePressure : 32|8@1+ (10,0) [0|2500] "kPa" Vector__XXX
  SG_ TyreWheelIdentTemp2 : 28|4@1+ (1,0) [0|15] "" Vector__XXX
@@ -1228,7 +1228,7 @@ BO_ 2566808062 GPM14: 8 Vector__XXX
  SG_ AccelPedalPosition : 56|8@1+ (0.4,0) [0|100] "%" Vector__XXX
  SG_ AccelPedalLowIdleSwitch : 50|2@1+ (1,0) [0|1] "" Vector__XXX
  SG_ StarterActive : 48|2@1+ (1,0) [0|1] "" Vector__XXX
- SG_ TorqueConvOilTemp : 32|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
+ SG_ TorqueConvOilTemp : 32|16@1+ (0.03125,-273) [-273|1735] "ï¿½C" Vector__XXX
  SG_ TorqueConvtOilTempWarning : 28|3@1+ (1,0) [0|2] "" Vector__XXX
  SG_ PTOControlAllowed : 26|2@1+ (1,0) [0|1] "" Vector__XXX
  SG_ SecEngineMtdPTOFeedback : 24|2@1+ (1,0) [0|1] "" Vector__XXX
@@ -1244,11 +1244,11 @@ BO_ 2566808574 GPM15: 8 Vector__XXX
  SG_ EngineOilPressureWarning : 35|2@1+ (1,0) [0|1] "" Vector__XXX
  SG_ EngineCoolantTempWarning : 32|3@1+ (1,0) [0|2] "" Vector__XXX
  SG_ EngineOilPressure : 24|8@1+ (4,0) [0|1000] "kPa" Vector__XXX
- SG_ EngineCoolantTemperature : 16|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
- SG_ EngineOilTemperature : 0|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
+ SG_ EngineCoolantTemperature : 16|8@1+ (1,-40) [-40|210] "ï¿½C" Vector__XXX
+ SG_ EngineOilTemperature : 0|16@1+ (0.03125,-273) [-273|1735] "ï¿½C" Vector__XXX
 
 BO_ 2566809086 GPM16: 8 Vector__XXX
- SG_ AmbientAirTemperature : 0|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
+ SG_ AmbientAirTemperature : 0|16@1+ (0.03125,-273) [-273|1735] "ï¿½C" Vector__XXX
 
 BO_ 2564947710 GPM21: 8 Vector__XXX
  SG_ VehicleType : 0|2@1+ (1,0) [0|3] "" Vector__XXX
@@ -1256,7 +1256,7 @@ BO_ 2564947710 GPM21: 8 Vector__XXX
 BO_ 2566834430 GPM22: 8 Vector__XXX
  SG_ BodyPressure : 48|8@1+ (0.1,0) [0|25] "bar" Vector__XXX
  SG_ BodyFluidLevel : 32|16@1+ (2,0) [0|128510] "L" Vector__XXX
- SG_ ThermalBodyTemperature : 24|8@1+ (1,-125) [-125|125] "°C" Vector__XXX
+ SG_ ThermalBodyTemperature : 24|8@1+ (1,-125) [-125|125] "ï¿½C" Vector__XXX
  SG_ RearObstacleDistance : 16|8@1+ (2,0) [0|500] "cm" Vector__XXX
  SG_ AntiTheftDeviceStatus : 2|2@1+ (1,0) [0|1] "" Vector__XXX
  SG_ ODDStatus : 0|2@1+ (1,0) [0|1] "" Vector__XXX
@@ -1369,7 +1369,7 @@ BO_ 2566806782 RGE22: 8 Vector__XXX
 BO_ 2566807294 RGE23: 8 Vector__XXX
  SG_ TyrePressThresholdDetect : 40|3@1+ (1,0) [0|7] "" Vector__XXX
  SG_ TyreModulePowerSupply : 43|2@1+ (1,0) [0|1] "" Vector__XXX
- SG_ TyreTemperature : 8|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
+ SG_ TyreTemperature : 8|16@1+ (0.03125,-273) [-273|1735] "ï¿½C" Vector__XXX
  SG_ AirLeakageDetection : 24|16@1+ (0.1,0) [0|6425.5] "Pa/s" Vector__XXX
  SG_ TyreWheelIdentification2 : 4|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ TyreWheelIdentification1 : 0|4@1+ (1,0) [0|15] "" Vector__XXX
@@ -1421,7 +1421,7 @@ BO_ 2349137662 XBR: 8 Vector__XXX
  SG_ XBRCtrlMode : 20|2@1+ (1,0) [0|3] "" Vector__XXX
  SG_ XBRPriority : 18|2@1+ (1,0) [0|3] "" Vector__XXX
  SG_ XBREBIMode : 16|2@1+ (1,0) [0|3] "" Vector__XXX
- SG_ ExtlAccelerationDemand : 0|16@1+ (0.00048828125,-15.687) [-15.687|15.687] "m/s²" Vector__XXX
+ SG_ ExtlAccelerationDemand : 0|16@1+ (0.00048828125,-15.687) [-15.687|15.687] "m/sï¿½" Vector__XXX
  SG_ XBRUrgency : 24|8@1+ (0.4,0) [0|100] "%" Vector__XXX
 
 BO_ 2566848510 WFI: 8 Vector__XXX
@@ -1481,8 +1481,8 @@ BO_ 2566832638 VDHR: 8 Vector__XXX
 
 BO_ 2565868030 VDC2: 8 Vector__XXX
  SG_ SteerWheelAngle : 0|16@1+ (0.0009765625,-31.374) [-31.374|31.374] "rad" Vector__XXX
- SG_ LongitudinalAcceleration : 56|8@1+ (0.1,-12.5) [-12.5|12.5] "m/s²" Vector__XXX
- SG_ LateralAcceleration : 40|16@1+ (0.00048828125,-15.687) [-15.687|15.687] "m/s²" Vector__XXX
+ SG_ LongitudinalAcceleration : 56|8@1+ (0.1,-12.5) [-12.5|12.5] "m/sï¿½" Vector__XXX
+ SG_ LateralAcceleration : 40|16@1+ (0.00048828125,-15.687) [-15.687|15.687] "m/sï¿½" Vector__XXX
  SG_ YawRate : 24|16@1+ (0.0001220703125,-3.92) [-3.92|3.92] "rad/s" Vector__XXX
  SG_ SteerWheelAngleSensorType : 22|2@1+ (1,0) [0|3] "" Vector__XXX
  SG_ SteerWheelTurnCounter : 16|6@1+ (1,-32) [-32|29] "turns" Vector__XXX
@@ -1717,20 +1717,20 @@ BO_ 2566845694 TIRE: 8 Vector__XXX
  SG_ CTITireStatus_11 m17 : 34|2@1+ (1,0) [0|3] "" Vector__XXX
  SG_ CTITireStatus_10 m16 : 34|2@1+ (1,0) [0|3] "" Vector__XXX
  SG_ CTITireStatus_01 m1 : 34|2@1+ (1,0) [0|3] "" Vector__XXX
- SG_ TireTemp_11 m17 : 16|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
- SG_ TireTemp_33 m51 : 16|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
- SG_ TireTemp_32 m50 : 16|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
- SG_ TireTemp_31 m49 : 16|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
- SG_ TireTemp_30 m48 : 16|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
- SG_ TireTemp_23 m35 : 16|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
- SG_ TireTemp_22 m34 : 16|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
- SG_ TireTemp_21 m33 : 16|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
- SG_ TireTemp_20 m32 : 16|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
- SG_ TireTemp_13 m19 : 16|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
- SG_ TireTemp_12 m18 : 16|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
- SG_ TireTemp_10 m16 : 16|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
- SG_ TireTemp_01 m1 : 16|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
- SG_ TireTemp_00 m0 : 16|16@1+ (0.03125,-273) [-273|1735] "°C" Vector__XXX
+ SG_ TireTemp_11 m17 : 16|16@1+ (0.03125,-273) [-273|1735] "ï¿½C" Vector__XXX
+ SG_ TireTemp_33 m51 : 16|16@1+ (0.03125,-273) [-273|1735] "ï¿½C" Vector__XXX
+ SG_ TireTemp_32 m50 : 16|16@1+ (0.03125,-273) [-273|1735] "ï¿½C" Vector__XXX
+ SG_ TireTemp_31 m49 : 16|16@1+ (0.03125,-273) [-273|1735] "ï¿½C" Vector__XXX
+ SG_ TireTemp_30 m48 : 16|16@1+ (0.03125,-273) [-273|1735] "ï¿½C" Vector__XXX
+ SG_ TireTemp_23 m35 : 16|16@1+ (0.03125,-273) [-273|1735] "ï¿½C" Vector__XXX
+ SG_ TireTemp_22 m34 : 16|16@1+ (0.03125,-273) [-273|1735] "ï¿½C" Vector__XXX
+ SG_ TireTemp_21 m33 : 16|16@1+ (0.03125,-273) [-273|1735] "ï¿½C" Vector__XXX
+ SG_ TireTemp_20 m32 : 16|16@1+ (0.03125,-273) [-273|1735] "ï¿½C" Vector__XXX
+ SG_ TireTemp_13 m19 : 16|16@1+ (0.03125,-273) [-273|1735] "ï¿½C" Vector__XXX
+ SG_ TireTemp_12 m18 : 16|16@1+ (0.03125,-273) [-273|1735] "ï¿½C" Vector__XXX
+ SG_ TireTemp_10 m16 : 16|16@1+ (0.03125,-273) [-273|1735] "ï¿½C" Vector__XXX
+ SG_ TireTemp_01 m1 : 16|16@1+ (0.03125,-273) [-273|1735] "ï¿½C" Vector__XXX
+ SG_ TireTemp_00 m0 : 16|16@1+ (0.03125,-273) [-273|1735] "ï¿½C" Vector__XXX
  SG_ TirePressThresholdDetection_33 m51 : 61|3@1+ (1,0) [0|7] "" Vector__XXX
  SG_ TirePressThresholdDetection_32 m50 : 61|3@1+ (1,0) [0|7] "" Vector__XXX
  SG_ TirePressThresholdDetection_31 m49 : 61|3@1+ (1,0) [0|7] "" Vector__XXX
@@ -2548,7 +2548,7 @@ BO_ 2566841342 EC1: 39 Vector__XXX
  SG_ SupportTSC1CtrlPurposeGroup1 : 280|8@1+ (1,0) [0|255] "" Vector__XXX
  SG_ SupportVariableRateTSC1Message : 272|8@1+ (1,0) [0|255] "" Vector__XXX
  SG_ EngDefaultTorqueLimit : 256|16@1+ (1,0) [0|64255] "Nm" Vector__XXX
- SG_ EngMomentOfInertia : 240|16@1+ (0.004,0) [0|257.02] "kg-m²" Vector__XXX
+ SG_ EngMomentOfInertia : 240|16@1+ (0.004,0) [0|257.02] "kg-mï¿½" Vector__XXX
  SG_ EngExRngRqdSpdCtrlRngUpperLimit : 224|16@1+ (0.125,0) [0|8031.875] "rpm" Vector__XXX
  SG_ EngRqdTorqueCtrlRangeUpperLimit : 216|8@1+ (1,-125) [-125|125] "%" Vector__XXX
  SG_ EngRqdTorqueCtrlRangeLowerLimit : 208|8@1+ (1,-125) [-125|125] "%" Vector__XXX
@@ -2573,7 +2573,7 @@ BO_ 2566841342 EC1: 39 Vector__XXX
 BO_ 2566767870 EBC5: 8 Vector__XXX
  SG_ BrakeTempWarning : 0|2@1+ (1,0) [0|3] "" Vector__XXX
  SG_ PrkngBrkeActuatorFullyActivated : 24|2@1+ (1,0) [0|3] "" Vector__XXX
- SG_ XBRAccelerationLimit : 16|8@1+ (0.1,-12.5) [-12.5|12.5] "m/s²" Vector__XXX
+ SG_ XBRAccelerationLimit : 16|8@1+ (0.1,-12.5) [-12.5|12.5] "m/sï¿½" Vector__XXX
  SG_ XBRActiveCtrlMode : 12|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ XBRSystemState : 10|2@1+ (1,0) [0|3] "" Vector__XXX
  SG_ FoundationBrakeUse : 8|2@1+ (1,0) [0|3] "" Vector__XXX
@@ -3923,7 +3923,7 @@ BO_ 2633922558 AP: 8 Vector__XXX
 
 BO_ 2566775038 AMB2: 8 Vector__XXX
  SG_ SpecificHumidity : 16|16@1+ (0.01,0) [0|642.55] "g/kg" Vector__XXX
- SG_ SolarSensorMax : 8|8@1+ (0.4,0) [0|100] "mW/cm²" Vector__XXX
+ SG_ SolarSensorMax : 8|8@1+ (0.4,0) [0|100] "mW/cmï¿½" Vector__XXX
  SG_ SolarIntensityPercent : 0|8@1+ (0.4,0) [0|100] "%" Vector__XXX
 
 BO_ 2566836478 DM8: 8 Vector__XXX
@@ -3998,7 +3998,7 @@ BO_ 2566835710 DM4: 13 Vector__XXX
  SG_ EngTorqueMode : 40|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ WheelBasedVehicleSpeed : 88|16@1+ (0.00390625,0) [0|250.996] "km/h" Vector__XXX
  SG_ EngPercentLoadAtCurrentSpeed : 72|8@1+ (1,0) [0|250] "%" Vector__XXX
- SG_ EngineCoolantTemperature : 80|8@1+ (1,-40) [-40|210] "°C" Vector__XXX
+ SG_ EngineCoolantTemperature : 80|8@1+ (1,-40) [-40|210] "ï¿½C" Vector__XXX
  SG_ DTC1 : 8|32@1+ (1,0) [0|4294967295] "" Vector__XXX
 
 BO_ 2566835454 DM3: 0 Vector__XXX
@@ -18806,6 +18806,7 @@ VAL_ 2566766078 TransitRouteIDUsage 3 "NotAvailable" 2 "ErrorCondition" 1 "Trnst
 VAL_ 2566766078 RangeCodeEnable 3 "NotAvailable" 2 "ErrorCondition" 1 "RangeCodeUsedForInterleavedData" 0 "RngCdeNotUsedForInterleavedData" ;
 VAL_ 2561605374 TireLocation 51 "Axle3_Position3" 50 "Axle3_Position2" 49 "Axle3_Position1" 35 "Axle2_Position3" 34 "Axle2_Position2" 33 "Axle2_Position1" 19 "Axle1_Position3" 18 "Axle1_Position2" 17 "Axle1_Position1" 1 "Axle0_Position1" 48 "Axle3_Position0" 32 "Axle2_Position0" 16 "Axle1_Position0" 0 "Axle0_Position0" ;
 VAL_ 2566765054 TireLocation 51 "Axle3_Position3" 50 "Axle3_Position2" 49 "Axle3_Position1" 35 "Axle2_Position3" 34 "Axle2_Position2" 33 "Axle2_Position1" 19 "Axle1_Position3" 18 "Axle1_Position2" 17 "Axle1_Position1" 1 "Axle0_Position1" 48 "Axle3_Position0" 32 "Axle2_Position0" 16 "Axle1_Position0" 0 "Axle0_Position0" ;
+VAL_ 2566845694 TireLocation 51 "Axle3_Position3xx" 50 "Axle3_Position2" 49 "Axle3_Position1" 35 "Axle2_Position3" 34 "Axle2_Position2" 33 "Axle2_Position1" 19 "Axle1_Position3" 18 "Axle1_Position2" 17 "Axle1_Position1" 1 "Axle0_Position1" 48 "Axle3_Position0" 32 "Axle2_Position0" 16 "Axle1_Position0" 0 "Axle0_Position0" ;
 VAL_ 2633922814 PCUSupplySolenoidStatus 3 "NotAvailable" 2 "Error" 1 "On" 0 "Off" ;
 VAL_ 2633922814 PCUCtrlSolenoidStatus 3 "NotAvailable" 2 "Error" 1 "On" 0 "Off" ;
 VAL_ 2633922814 PCUDeflateSolenoidStatus 3 "NotAvailable" 2 "Error" 1 "On" 0 "Off" ;
