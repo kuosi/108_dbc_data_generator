@@ -3,7 +3,9 @@ services:
   can_data_generator:
     build: .
     volumes:
-      #Location of the configuration files on the host
-      - /home/kuosi/dev/108_dbc_data_generator/config:/usr/src/app/config
+      #Location of the configuration files on the host. Change the location to fit to your needs.
+      - /home/kuosi/dev/CAN-data-generator/config:/usr/app/config
+    #command for starting the service. Change the configuration file and/or the dbc file to fit to your local files.
+    command: "python3 -u /usr/app/src/main.py -d /usr/app/config -c configuration.json -b j1939_orig.dbc"
     #Use the host network to have access to the can interface
     network_mode: host

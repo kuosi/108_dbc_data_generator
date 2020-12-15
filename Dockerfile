@@ -2,7 +2,7 @@
 FROM python:3
 
 # set the working directory in the container
-WORKDIR /usr/src/app/src
+WORKDIR /usr/app/src
 
 # copy the dependencies file to the working directory
 COPY src/requirements.txt .
@@ -14,4 +14,4 @@ RUN pip install -r requirements.txt
 COPY src/ .
 
 # command to run on container start
-CMD [ "python3", "./main.py" ]
+# CMD ["sh", "-c", "python3 ./main.py -d /usr/app/config -c configuration.json -b j1939_orig.dbc" ]

@@ -11,7 +11,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/kuosi/108_dbc_data_generator">
+  <a href="https://github.com/kuosi/CAN-data-generator">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -20,14 +20,14 @@
   <p align="center">
     A CAN Data generator based on a CAN-Matrix described with a Vector .dbc format.
     <br />
-    <a href="https://github.com/kuosi/108_dbc_data_generator"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/kuosi/CAN-data-generator"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/kuosi/108_dbc_data_generator">View Demo</a>
+    <a href="https://github.com/kuosi/CAN-data-generator">View Demo</a>
     ·
-    <a href="https://github.com/kuosi/108_dbc_data_generator/issues">Report Bug</a>
+    <a href="https://github.com/kuosi/CAN-data-generator/issues">Report Bug</a>
     ·
-    <a href="https://github.com/kuosi/108_dbc_data_generator/issues">Request Feature</a>
+    <a href="https://github.com/kuosi/CAN-data-generator/issues">Request Feature</a>
   </p>
 </p>
 
@@ -40,7 +40,8 @@
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Running the software](#running-the-software)
 * [Usage](#usage)
 * [Roadmap](#roadmap)
 * [License](#license)
@@ -62,7 +63,7 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 
 ### Built With
 
-* [Snapcraft](https://snapcraft.io/)
+* [Docker](https://www.docker.com/) -- Optional
 * [Python3](https://www.python.org/)
 
 
@@ -84,45 +85,50 @@ sudo ip link add dev vcan0 type vcan
 sudo ip link set up vcan0
 ```
 
-### Installation
+### Usage
 
-The software is installed as a snap package which starts a service.
+#### Python3
 
-```snap install 108_dbc_data_generator --dangerous --devmode
 ```
+usage: main.py [-h] -d CONFIGDIR -c CONFIGFILE -b DBCFILE
 
-<!-- USAGE EXAMPLES -->
-## Usage
-
-* set the can interface
-```
-snap set 108_dbc_data_generator can.interface=vcan0
-```
-
-* set the frequency for generating can data (hz)
-```
-snap set 108_dbc_data_generator can.frequency=vcan0
+optional arguments:
+  -h, --help            show this help message and exit
+  -d CONFIGDIR, --configdir CONFIGDIR
+                        Directory containing the configuration and dbc files
+  -c CONFIGFILE, --configfile CONFIGFILE
+                        Configuration file
+  -b DBCFILE, --dbcfile DBCFILE
+                        DBC file
 ```
 
-* set the FD property of the can interface (True = CAN_FD, False = Normal CAN)
-```
-snap set 108_dbc_data_generator can.fd=False
+#### Docker
+
+Adapt the file docker-compose.yml to match your own configuration.
+
+```docker-compose -up
 ```
 
-* set the dbc file
-```
-snap set 108_dbc_data_generator dbc.file=full_path_to_dbc_file
-```
 
-* set the text file containing the list of message name that shall be considerd during the generation of data
+### Configuration file
+
 ```
-snap set 108_dbc_data_generator dbc.messages=full_path_to_messages_file
+{
+    "can": {
+        "fd": <True if can message with size <= 64 Bytes shall be sent. Shall match with the CAN interface.>,
+        "frequency": <Frequency between message.>,
+        "interface": <Configured can interface where the generated can data shall be sent.>
+    },
+    "dbc": {
+        "IDs": <Semi-column separated CAN IDs.>
+    }
+}
 ```
 
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/kuosi/108_dbc_data_generator/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/kuosi/CAN-data-generator/issues) for a list of proposed features (and known issues).
 
 
 <!-- LICENSE -->
@@ -131,13 +137,12 @@ See the [open issues](https://github.com/kuosi/108_dbc_data_generator/issues) fo
 Distributed under the MIT License. See `LICENSE` for more information.
 
 
-
 <!-- CONTACT -->
 ## Contact
 
-Winnie Pobouh - [www.winniepobouh.com](https://winniepobouh.com)
+Winnie Pobouh - [www.kuosi.io](https://kuosi.io)
 
-Project Link: [https://github.com/kuosi/108_dbc_data_generator](https://github.com/kuosi/108_dbc_data_generator)
+Project Link: [https://github.com/kuosi/CAN-data-generator](https://github.com/kuosi/CAN-data-generator)
 
 
 <!-- ACKNOWLEDGEMENTS -->
