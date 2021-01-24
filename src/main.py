@@ -51,16 +51,16 @@ def main(argv):
     can_interface = config["can"]["interface"] #Configured can interface where the generated can data shall be sent
     can_fd = True if (config["can"]["fd"].strip().lower() == "true") else False #True if can message with size <= 64 Bytes shall be sent. Shall match with the CAN interface.
     default_sending_cycle_time= config["cycle_time"]["sending"] #Default cycle time in ms
-    dbc_messages = config["dbc"]["IDs"] #Semi-column separated CAN IDs
+    dbc_messages = config["dbc"]["MsgNames"] #Semi-column separated CAN Message Names
     logging_level = config["logging"]["level"] #Debug level
 
     #Load the dbc file
     db = cantools.database.load_file(dbcfile)
 
     
-    #In case we want to generate all IDs of the dbc
+    '''#In case we want to generate all IDs of the dbc
     for msg in db.messages:
-        print (str(msg.frame_id))
+        print (str(msg.frame_id))'''
 
     #set logging
     log_level={
@@ -94,10 +94,10 @@ def main(argv):
         
         #sleep(0.1) #Sleep for 10 ms
 
-        for frame_id in data:
+        for msg_name in data:
             
             #Get one of the selected dbc messages
-            message = db.get_message_by_frame_id(int(frame_id))
+            message = db.get_message_by_name(msg_name)
 
             #Only consider can messages of max size 8 bytes in case of normal CAN or max size 64 bytes in case of CAN FD.
             if ((can_fd and message.length <= 64) or ((not can_fd) and message.length <= 8)):

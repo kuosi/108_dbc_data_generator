@@ -7,7 +7,7 @@
         "sending": 500
     },
     "dbc": {
-        "IDs": "2566839550;2566844158"
+        "MsgNames": "IO;HOURS;EEC1;ET1"
     },
     "logging":{
         "level": "debug"
